@@ -1,0 +1,13 @@
+diff --git a/openmrs.md b/openmrs.md
+index 7e73ade..1559e4a 100644
+--- a/openmrs.md
++++ b/openmrs.md
+@@ -107,7 +107,7 @@ However, the online centralized solution is being tested in three hospitals to a
+    There are several hospitals have been automated by OpenMRS Plus.
+ 
+ **Automated hospital list:**
+-# Automated by OpenMRS + hospital list and Automation Start Dates
++# Automated by OpenMRS+ hospital list and Automation Start Dates
+ 
+ | S/I | Hospital and Other Information                                              | Automation Start Date | Vendor Information                |
+ |-----|-----------------------------------------------------------------------------|------------------------|----------------------------------|

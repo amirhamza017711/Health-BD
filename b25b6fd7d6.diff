@@ -1,0 +1,91 @@
+diff --git a/openmrs.md b/openmrs.md
+index afadd06..89b6ebc 100644
+--- a/openmrs.md
++++ b/openmrs.md
+@@ -3,7 +3,7 @@
+ **Introduction to OpenMRS**
+ OpenMRS is an open-source electronic medical record (EMR) system tailored for resource-constrained environments, first established in 2004. It offers a modular architecture that allows for extensive customization, enabling it to meet the specific needs of different healthcare systems.
+ 
+-In Bangladesh, OpenMRS has evolved into a customized version known as **OpenMRS+**, which integrates OpenELIS (a laboratory information system) and an inventory module with the Bahmni version. This comprehensive system is significantly transforming hospital management and service delivery in public hospitals.
++In Bangladesh, OpenMRS has evolved into a customized version known as **OpenMRS+**, which integrates OpenELIS (a laboratory information system) and an inventory module with the Bahmni version. This comprehensive system is significantly transforming hospital management and service delivery in public hospitals. 
+ 
+ * * *
+ **Overview of OpenMRS+ in Bangladesh**
+@@ -101,6 +101,76 @@ A common question is whether deploying a dedicated server in each hospital is a
+ 
+ However, the online centralized solution is being tested in three hospitals to assess its efficiency, feasibility, and scalability for managing multiple facilities. This dual-modality approach ensures that Bangladesh can leverage digital technology effectively while addressing current infrastructure limitations.
+ 
++***
++**FAQs: Which hospitals have been automated by OpenMRS Plus?**
++There are several hospitals have been automated by OpenMRS Plus. 
++**Automated hospital list:**
++# Hospital Automation Start Date 
++
++| S/I | Hospital and Others Information                                               | Automation Start Date       |
++|-----|------------------------------------------------------------------------------|-----------------------------|
++| 1   | Gopalganj 250 Bed General Hospital                                           | 07/06/2017                  |
++| 2   | Muksudpur Upazila Health Complex                                             | 15/08/2020                  |
++| 3   | Kashiani Upazila Health Complex                                              | 22 October 2020             |
++| 4   | Kotalipara Upazila Health Complex                                            | 09/12/2020                  |
++| 5   | Tungipara Upazila Health Complex                                             | 04-01-2020                  |
++| 6   | Singair Upazila Health Complex                                               | 02/01/2021                  |
++| 7   | Harirampur Upazila Health Complex                                            | 15-08-2020                  |
++| 8   | Shibalaya Upazila Health Complex                                             | 01/01/2021                  |
++| 9   | Saturia Upazila Health Complex                                               | 20/10/2020                  |
++| 10  | 250 Bed General Hospital, Kishoreganj                                        | 01/01/2021                  |
++| 11  | Bhairab Upazila Health Complex                                               | 03/03/2021                  |
++| 12  | Tarail Upazila Health Complex                                                | 09/01/2020                  |
++| 13  | Mithamoin Upazila Health Complex                                             | 27/05/2020                  |
++| 14  | Katiadi Upazila Health Complex                                               | 12/16/2020                  |
++| 15  | Pakundia Upazila Health Complex                                              | 4 February 2021             |
++| 16  | Khulna 250 Bed General Hospital, Khulna                                      | 21-07-2020                  |
++| 17  | Paikgacha Upazila Health Complex                                             |                             |
++| 18  | General Hospital Cumilla                                                     | 12-01-2021                  |
++| 19  | Muradnagar Upazila Health Complex                                            | 04/04/2021                  |
++| 20  | Burichong Upazila Health Complex                                             | 14-03-2022                  |
++| 21  | Chaddagram Upazila Health Complex                                            | August 01, 2023             |
++| 22  | Barguna District Hospital                                                    | 01-12-2020                  |
++| 23  | Amtali Upazila Health Complex                                                | 02-02-2022                  |
++| 24  | Betagi Upazila Health Complex                                                | 20/02/2022                  |
++| 25  | Patharghata Upazila Health Complex                                           | 20/06/2022                  |
++| 26  | Netrokona Sadar Hospital                                                     | 23-01-2022                  |
++| 27  | Shibchar Upazila Health Complex                                              | 03/01/2021                  |
++| 28  | Rajoir Upazila Health Complex                                                | 17/04/2021                  |
++| 29  | Dacope Upazila Health Complex                                                | 03-06-2021                  |
++| 30  | Dumuria Upazila Health Complex                                               | 01/08/2021                  |
++| 31  | Jhenaidah District Hospital                                                  | 28/10/2020                  |
++| 32  | Mohanganj Upazila Health Complex                                             | 13 Oct 2021                 |
++| 33  | Kotchandpur Upazila Health Complex                                           | 02-01-2020                  |
++| 34  | Harinakunda Upazila Health Complex                                           | 15-08-2020                  |
++| 35  | Barhatta Upazila Health Complex                                              | 31/03/2022                  |
++| 36  | Gofargaon Upazila Health Complex                                             | 21/01/2021                  |
++| 37  | Muktagacha Upazila Health Complex                                            | 01/12/2020                  |
++| 38  | Fenchuganj Upazila Health Complex                                            |                             |
++| 39  | Biswanath Upazila Health Complex                                             | 03 July 2021                |
++| 40  | Sylhet Shahid Shamsuddin Ahmed District Hospital                             | 01-11-2020                  |
++| 41  | Beanibazar Upazila Health Complex                                            | 25/02/2021                  |
++| 42  | South Surma Upazila Health Complex                                           |                             |
++| 43  | Domar Upazila Health Complex                                                 | 21 March, 2021              |
++| 44  | Dimla Upazila Health Complex                                                 | 25th March, 2021            |
++| 45  | Kishoreganj Upazila Health Complex                                           | 11-01-2020                  |
++| 46  | Nilphamari District Hospital                                                 | 07 March 2021               |
++| 47  | Jaldhaka Upazila Health Complex                                              | 10-01-2021                  |
++| 48  | Pirganj Upazila Health Complex                                               | 4th Jan, 2021               |
++| 49  | Gurudashpur Upazila Health Complex                                           | 8/9/2020                    |
++| 50  | Natore District Hospital                                                     | 1/12/2020                   |
++| 51  | Singra Upazila Health Complex                                                | 09/02/2021                  |
++| 52  | Gopalganj Eye Hospital And Training Institute                                | 01-02-2024                  |
++| 53  | Kaliganj Upazila Health Complex                                              | 01/07/2020                  |
++| 54  | Kaliakair Upazila Health Complex                                             | 2024                        |
++| 55  | Kapasia Upazila Health Complex                                               | 2024                        |
++| 56  | Araihazar Upazila Health Complex                                             | 03-21-2024                  |
++| 57  | Manikganj 250 Bed District Hospital                                          | 27/05/2024                  |
++| 58  | National Institute of Cardiovascular Diseases, Bangladesh (NICVD)            |                             |
++| 59  | National Institute of Traumatology and Orthopaedic Rehabilitation(NITOR)                                                                               | 2013                        |
++| 60  | National Center for Control of Rheumatic Fever & Heart Disease                | 2024                        |
++
++
+ * * *
+ **Conclusion**
+ The implementation of OpenMRS+ across 100 public hospitals in Bangladesh demonstrates how tailored technological solutions can address infrastructure challenges and improve healthcare outcomes. The initiative showcases a pragmatic approach to overcoming connectivity limitations through the dual deployment modalities—on-premise servers and centralized online solutions—positioning Bangladesh as a leader in leveraging digital technology for enhanced public healthcare.
+\ No newline at end of file

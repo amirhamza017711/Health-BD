@@ -1,0 +1,13 @@
+diff --git a/HID.md b/HID.md
+index ca673bc..e8ee957 100644
+--- a/HID.md
++++ b/HID.md
+@@ -32,7 +32,7 @@ The Health ID system offers multiple convenient ways for citizens to register, e
+         
+ 3.  **Online Portal:**
+     
+-    *   In selected pilot areas, an **online portal** (https://eappointment.dghs.gov.bd) allows citizens to book appointments for outdoor services. From this portal, anyone can get a health ID by providing their NID or birth registration number. However, getting an online appointment for outdoor services is limited to only piloting areas. This convenient feature enables access to health services even before visiting a healthcare facility and allows patients to obtain their own Health ID from home. Even if a person is out-of-country or abroad, they can also obtain a Health ID from this online portal.
++    *   An **online portal** (https://eappointment.dghs.gov.bd) allows citizens to obtain a health ID by providing their NID or birth registration number. In selected pilot areas, from this portal, anyone can book appointments for outdoor services. However, getting an online appointment for outdoor services is limited to only piloting areas. This convenient feature enables access to health services even before visiting a healthcare facility and allows patients to obtain their own Health ID from home. Even if a person is out-of-country or abroad, they can also obtain a Health ID from this online portal.
+ 
+ ---
+ 

@@ -1,0 +1,176 @@
+diff --git a/vaxEPI.md b/vaxEPI.md
+index e69de29..2e4a28a 100644
+--- a/vaxEPI.md
++++ b/vaxEPI.md
+@@ -0,0 +1,167 @@
++# VaxEPI: Integrated Vaccine Registration & Vaccination Information (Bangladesh)
++
++## 1) What VaxEPI Is (Overview)
++
++VaxEPI is Bangladesh DGHS’s public-facing portal (introduced in **2024**) for **integrated vaccine registration** and **vaccination information management**. It covers both **routine EPI** (Expanded Programme on Immunization) and **special campaigns**. VaxEPI is a **single-time registration** system: a child is registered once and remains trackable across programs and facilities. Registration is verified against the **Birth Registration Number (BRN)** to ensure identity integrity and deduplication.
++
++VaxEPI is interoperable with the national **Shareable Health Record (SHR)**, so each registered child receives a **Unique Health ID**; all vaccination events appear in the **Health Information Exchange (HIE)** for authorized use. Families receive a **vaccine card with a QR code**; vaccinators record doses and scan the QR to update the central record. Digital **vaccination certificates** are made available via the [VaxEPI portal](https://vaxepi.gov.bd), following EHR-style access patterns. Special campaigns such as **HPV**, **TCV (Typhoid Conjugate Vaccine)**, and **meningitis vaccine for Hajj pilgrims** are also managed through VaxEPI.
++
++**Retrieval cues:** “single-time registration”, “BRN verification”, “SHR Unique Health ID”, “QR vaccine card”, “routine EPI + campaigns”, “digital certificate”, “HIE availability”.
++
++---
++
++## 2) Core Objectives
++
++* **Universal, deduplicated identity for children** via BRN → SHR → Unique Health ID.
++* **Continuity of care**: one longitudinal vaccination timeline per child across facilities.
++* **Operational efficiency**: unified workflows for routine and campaign activities.
++* **Data quality & exchange**: real-time updates to HIE; fewer missed doses/duplicates.
++* **Citizen convenience**: QR-coded card and downloadable vaccination certificate.
++
++---
++
++## 3) Scope & Program Coverage
++
++* **Routine EPI**: BCG, OPV/IPV, Penta, PCV, MR, etc. (country schedule applies).
++* **Special campaigns**: **HPV**, **TCV**, and **meningitis/Hajj** drives, plus other MoHFW/DGHS-approved campaigns.
++* **Population focus**: primarily **children**; program extensions may include adolescents or adults for specific campaigns (e.g., Hajj).
++
++---
++
++## 4) Identity & Registration Model
++
++**Inputs:** Child’s **BRN**, name (Bangla/English), date of birth, sex, guardian details, address/upazila/district, contact number(s).
++**Verification:** Online verification of **BRN** (preventing duplicates).
++**Linkage:** On successful registration, VaxEPI requests/receives a **Unique Health ID** from **SHR**.
++**Artifacts:** **QR-coded vaccine card** (physical and/or digital).
++**Card Use:** QR encodes persistent identifiers (e.g., Health ID and VaxEPI record ID) to enable fast retrieval and updates at point of care.
++
++---
++
++## 5) Vaccination Workflow (Facility & Field)
++
++1. **Presentation:** Caregiver brings the child and **QR card** to a session (facility or outreach).
++2. **Assessment:** Vaccinator reviews **due/overdue doses** (per age and schedule) in VaxEPI.
++3. **Administration:** Vaccine is given; **dose details** are recorded (vaccine code, dose #, lot/batch, expiry, route, site).
++4. **Update:** Vaccinator **scans the QR**; VaxEPI loads the child record and **posts the dose event**.
++5. **Sync & Exchange:** Event is written to VaxEPI and **propagated to HIE/SHR**.
++6. **Certificate:** A refreshed **digital vaccination certificate** becomes available in the portal.
++
++---
++
++## 6) Citizen Experience
++
++* **Discoverability:** Public portal for registration and certificate download.
++* **Proof of vaccination:** **QR-coded card**; digital **certificate** view/print.
++* **Portability:** Records visible across facilities due to SHR Health ID.
++* **Notifications (if enabled):** SMS or portal prompts for upcoming/overdue doses.
++
++---
++
++## 7) Interoperability & Data Exchange
++
++* **SHR (Shareable Health Record):** creation/lookup of **Unique Health ID**.
++* **HIE (Health Information Exchange):** publishes vaccination events for authorized systems.
++* **Standards & semantics:** consistent vaccine codes, dose definitions, and schedule logic to support analytics and exchange.
++* **Result:** Authorized providers and national analytics can **query longitudinal vaccination history** for service continuity and planning.
++
++---
++
++## 8) Special Campaigns (HPV, TCV, Hajj Meningitis)
++
++* **Registration:** Uses the **same child record** (no duplicate accounts).
++* **Targeting:** Eligibility computed by **age/sex/risk group** (e.g., adolescent girls for **HPV**, child age bands for **TCV**, **pilgrim status** for Hajj).
++* **Delivery:** VaxEPI supports **bulk session lists**, on-site verification via **QR**, and rapid **dose posting**.
++* **Reporting:** Campaign-specific dashboards can aggregate coverage, dropout, and stock usage.
++
++---
++
++## 9) Governance, Roles & Access
++
++* **DGHS/MIS ownership**; national data stewardship.
++* **Roles:** Registrar (front desk), Vaccinator, Facility Manager, District/Upazila EPI Manager, National Analyst.
++* **Access controls:** Role-based permissions for read/write; certificate access controlled via authenticated portal flow and/or verifiable QR link.
++* **Auditability:** All vaccination events and edits have **provenance** (who/when/where).
++
++---
++
++## 10) Data Quality & Safety Nets
++
++* **Identity deduplication:** BRN check at registration; “possible duplicate” flags.
++* **Schedule validation:** Client-side/server-side checks for **age-appropriate** dosing and minimum intervals.
++* **Lot controls:** Prevent posting events for **expired** lots; require lot/batch.
++* **Correction workflow:** Voiding/mending mis-entries with reason and audit trail.
++
++---
++
++## 11) Privacy & Security (High Level)
++
++* **PII handling:** Minimal necessary disclosure; **BRN** and **Health ID** protected.
++* **QR contents:** Encodes identifiers or verifiable token, not full PII.
++* **Transport/storage:** Encrypted channels; secure storage per national policy.
++* **Access:** Role-based access; certificate retrieval bound to guardian verification or QR proof.
++
++---
++
++## 12) Typical User Journeys
++
++**A) First-time Registration**
++
++1. Guardian opens [VaxEPI](https://vaxepi.gov.bd) → enters **BRN** and child details → system verifies BRN.
++2. VaxEPI fetches/assigns **Unique Health ID (SHR)**.
++3. VaxEPI issues **QR-coded vaccine card**; child appears on due-list.
++
++**B) Dose Administration**
++
++1. Child presents **QR card** → vaccinator scans → due doses displayed.
++2. Dose given → vaccinator records details → **event saved** → **HIE updated**.
++3. Certificate refreshed → guardian can **download** from portal.
++
++**C) Special Campaign (e.g., HPV)**
++
++1. Eligibility auto-determined → session roster generated.
++2. On site, **QR scan** retrieves record → dose posted.
++3. Coverage reports update in near-real time.
++
++---
++
++## 13) Frequently Asked Clarifications (for RAG)
++
++* **Q:** Is VaxEPI only for routine EPI?
++  **A:** No. It supports **routine EPI** and **special campaigns** (HPV, TCV, Hajj meningitis).
++
++* **Q:** Do parents need to register for every campaign?
++  **A:** **No.** VaxEPI is **single-time registration**; campaigns reuse the same **Health ID**.
++
++* **Q:** How is identity verified?
++  **A:** Via **Birth Registration Number (BRN)**; then linked to **SHR** to issue a **Unique Health ID**.
++
++* **Q:** How are vaccination events captured?
++  **A:** Vaccinator **scans the QR card** and records details; the system posts to VaxEPI and **HIE**.
++
++* **Q:** Where can I get the vaccination certificate?
++  **A:** From the **VaxEPI portal** at [https://vaxepi.gov.bd](https://vaxepi.gov.bd), updated after each dose.
++
++* **Q:** What if a dose was recorded incorrectly?
++  **A:** There is a **void/correction** process with full **audit trail**.
++
++---
++
++## 14) Abbreviation Glossary
++
++* **BRN:** Birth Registration Number
++* **DGHS:** Directorate General of Health Services
++* **EHR:** Electronic Health Record
++* **EPI:** Expanded Programme on Immunization
++* **HIE:** Health Information Exchange
++* **HPV:** Human Papillomavirus vaccine (campaign)
++* **MoHFW:** Ministry of Health and Family Welfare
++* **QR:** Quick Response code
++* **SHR:** Shareable Health Record
++* **TCV:** Typhoid Conjugate Vaccine
++
++---
++
++## 15) One-Paragraph Summary (for fallback retrieval)
++
++VaxEPI (launched 2024 by DGHS/MIS) is Bangladesh’s integrated portal for vaccine registration and vaccination information, covering routine EPI and special campaigns (HPV, TCV, Hajj meningitis). Registration is verified by BRN; each child is issued a Unique Health ID from the national Shareable Health Record (SHR). Vaccinators give doses and scan a QR-coded vaccine card to update the record; events sync to the Health Information Exchange (HIE). Families can download an up-to-date digital vaccination certificate from the [VaxEPI portal](https://vaxepi.gov.bd). VaxEPI’s single-time registration, SHR linkage, and QR-based point-of-care updates make it a cornerstone of Bangladesh’s digital health implementation.
+diff --git a/vaxEPI.pdf b/vaxEPI.pdf
+new file mode 100644
+index 0000000..aea80f0
+Binary files /dev/null and b/vaxEPI.pdf differ

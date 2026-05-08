@@ -1,0 +1,41 @@
+diff --git a/PrivateHospitalRegistration.md b/PrivateHospitalRegistration.md
+index ac861dd..0c4324a 100644
+--- a/PrivateHospitalRegistration.md
++++ b/PrivateHospitalRegistration.md
+@@ -41,13 +41,13 @@ After submitting the application, print the application and save it in your orga
+ 2. In Payment Info, pay the revised license/renewal fee as per the latest circular issued by the Ministry of Health and Family Welfare and 15% VAT on the said fee as per the government instructions in a separate invoice form.
+ 3. On the Upload page, upload the scanned copy of the owners' National Identity Card, Updated Trade License, TIN (New Organization)/Income Tax Certificate (Old Organization), VAT Registration Number, Environmental Clearance Certificate, Narcotic Permit (where applicable), Waste Management (Harmful and Innocent) Agreement and Invoice.
+ 4. Prepare a book by adding the following documents (certified) and store it in your organization. Which will be inspected during the inspection:-
+-	*List of currently running tests
+-	*Name, address, photo of specialist doctor, registration by BMDC, specialist certificate, appointment and joining/consent letter
+-	*Name, address, photo of report giver, registration by BMDC, specialist certificate, appointment and joining/consent letter
+-	*Name, address, photo, registration certificate, appointment and joining letter of medical technologists
+-	*Name, address, photo, educational qualification, appointment and joining letter and experience certificate of cleaning staff
+-	*Name, address, photo, educational qualification, appointment and joining letter and experience certificate
+-	*Name, address, photo, educational qualification, appointment and joining letter and experience certificate of other officers and employees
++	* List of currently running tests
++	* Name, address, photo of specialist doctor, registration by BMDC, specialist certificate, appointment and joining/consent letter
++	* Name, address, photo of report giver, registration by BMDC, specialist certificate, appointment and joining/consent letter
++	* Name, address, photo, registration certificate, appointment and joining letter of medical technologists
++	* Name, address, photo, educational qualification, appointment and joining letter and experience certificate of cleaning staff
++	* Name, address, photo, educational qualification, appointment and joining letter and experience certificate
++	* Name, address, photo, educational qualification, appointment and joining letter and experience certificate of other officers and employees
+ 	
+ 	
+ **Special Instructions for Blood Bank**
+@@ -55,9 +55,9 @@ After submitting the application, print the application and save it in your orga
+ 2. In Payment Info, pay the inspection fee, license/renewal fee as per Safe Blood Transfusion Rules‍, 2008 and 15% VAT on the said fee as per government instructions in a separate invoice form and provide the information.
+ 3. On the Upload page, upload the owners' National Identity Card, Updated Trade License, TIN (New Organization)/Income Tax Certificate (Old Organization), VAT Registration Number, Environmental Clearance Certificate, Waste Management (Harmful and Non-Harmful) Agreement, Postgraduate Certificate of Blood Transfusion Specialist, Appointment/Joining/Consent Letter of Blood Transfusion Specialist and scanned copy of the invoice.
+ 4. Prepare a book by adding the following documents (attested) and store it in your organization. Which will be inspected during the inspection:-
+-	*Name, address, photo of the specialist doctor, registration by BMDC, specialist certificate, appointment and joining/consent letter
+-	*Name, address, photo of the doctor on duty, registration, appointment and joining letter by BMDC
+-	*Name, address, photo, registration certificate, educational certificate, appointment and joining letter of blood transfusion technologists
+-	*Name, address, photo, registration certificate, educational certificate, appointment and joining letter of nurses on duty
+-	*Name, address, photo, educational qualification, appointment and joining letter and experience certificate of lab attendants
+-	*Name, address, photo, educational qualification, appointment and joining letter and experience certificate of other officers and employees
++	* Name, address, photo of the specialist doctor, registration by BMDC, specialist certificate, appointment and joining/consent letter
++	* Name, address, photo of the doctor on duty, registration, appointment and joining letter by BMDC
++	* Name, address, photo, registration certificate, educational certificate, appointment and joining letter of blood transfusion technologists
++	* Name, address, photo, registration certificate, educational certificate, appointment and joining letter of nurses on duty
++	* Name, address, photo, educational qualification, appointment and joining letter and experience certificate of lab attendants
++	* Name, address, photo, educational qualification, appointment and joining letter and experience certificate of other officers and employees

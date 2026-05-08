@@ -1,0 +1,63 @@
+diff --git a/ICD11.md b/ICD11.md
+new file mode 100644
+index 0000000..f44d648
+--- /dev/null
++++ b/ICD11.md
+@@ -0,0 +1,57 @@
++**Implementation of ICD-11 in Bangladesh: Current Status and Future Plans**
++
++### **Introduction**
++The International Classification of Diseases (ICD) is a globally recognized standard for morbidity and mortality coding, essential for healthcare management, epidemiological studies, and policy formulation. Bangladesh has taken significant steps towards transitioning from ICD-10 to ICD-11, aligning with global health data interoperability and standardization efforts. The country is currently piloting ICD-11 implementation in six hospitals, with a roadmap for nationwide adoption.
++
++### **Current Implementation of ICD-11 in Bangladesh**
++
++As part of the pilot phase, Bangladesh has deployed ICD-11 in six hospitals, using two different approaches:
++
++1. **OpenMRS-Based Hospitals (WHO ICD-11 API):**
++   - Cumilla District Hospital
++   - Nilphamari District Hospital
++   - Barguna District Hospital
++   
++   These hospitals use OpenMRS, an open-source electronic medical record (EMR) system, integrated with the WHO ICD-11 API for morbidity and mortality coding.
++
++2. **DHIS2-Based Hospitals (ICD-11 Codes in Dropdowns):**
++   - Cox’s Bazar District Hospital
++   - Khulna Medical College Hospital
++   - Rajshahi Medical College Hospital
++   
++   These hospitals use DHIS2, where ICD-11 codes are manually incorporated into dropdown menus for structured coding.
++
++The pilot phase aims to assess the feasibility, usability, and integration of ICD-11 within existing healthcare information systems before broader deployment.
++
++### **Future Plans for ICD-11 Implementation**
++
++Recognizing the importance of standardized medical coding, Bangladesh has formulated a comprehensive plan to fully integrate ICD-11 into its healthcare infrastructure. The key future initiatives include:
++
++1. **Central Terminology Registry Adoption:**
++   - Bangladesh is integrating ICD-11 into its Central Terminology Registry to standardize signs, symptoms, diagnoses, and medication classifications.
++   - This will ensure consistency across all public hospitals using OpenMRS and other health information systems.
++
++2. **Expansion of ICD-11 in OpenMRS Deployments:**
++   - Currently, over 100 public hospitals in Bangladesh use OpenMRS.
++   - ICD-11 will be adopted as the standard morbidity and mortality coding system across all these hospitals.
++   - Instead of relying on the WHO ICD-11 API, a **dockerized ICD-11 API** will be deployed for local usage, ensuring stability and reliability.
++
++3. **Integration of ICD-11 in DHIS2:**
++   - In DHIS2, ICD-11 will be introduced for **mortality coding**, replacing the previous ICD-10-based approach.
++   - For **morbidity coding**, ICD-10 will continue to be used, but a mapping system will be developed to transition the data to ICD-11 over time.
++
++4. **Development of an ICD-11 Implementation Guide for Bangladesh:**
++   - A national implementation guide will be formulated to streamline the adoption process.
++   - This guide will provide detailed technical and operational guidance for healthcare facilities and IT professionals.
++
++5. **Training and Capacity Building:**
++   - Training materials will be developed and hosted on an **e-learning platform** to facilitate nationwide training of healthcare professionals.
++   - This will ensure that doctors, coders, and health information officers are well-equipped to use ICD-11 effectively.
++
++6. **Deployment and Maintenance Guidelines for IT Professionals:**
++   - A comprehensive guide will be published to assist IT professionals in the deployment, maintenance, and troubleshooting of ICD-11 API and its integration with health information systems.
++   - This will support sustainable and scalable ICD-11 implementation.
++
++### **Conclusion**
++Bangladesh's initiative to implement ICD-11 represents a major step toward **modernizing health information management** and aligning with international standards. The pilot program in six hospitals has provided critical insights, paving the way for nationwide adoption. With a structured approach encompassing **policy formulation, system integration, training, and technical support**, Bangladesh is well-positioned to achieve full-scale ICD-11 implementation in the coming years. This transition will significantly enhance **healthcare reporting, disease surveillance, and evidence-based policy-making** in the country.
++
